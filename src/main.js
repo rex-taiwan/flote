@@ -1,4 +1,3 @@
-import Vuetify from 'vuetify/lib';
 import Vue from 'vue';
 
 // Components
@@ -8,9 +7,7 @@ import App from './App.vue';
 import './registerServiceWorker';
 import router from './router';
 import store from './store';
-
-Vue.use(Vuetify);
-const vuetify = new Vuetify({});
+import vuetify from './plugins/vuetify';
 
 Vue.config.productionTip = false;
 
