@@ -10,7 +10,7 @@ import router from './router';
 import store from './store';
 
 Vue.use(Vuetify);
-const vuetify = Vuetify({});
+const vuetify = new Vuetify({});
 
 Vue.config.productionTip = false;
 
