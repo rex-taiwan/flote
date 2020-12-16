@@ -1,12 +1,14 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Home from '../views/Home.vue';
+
 // eslint-disable-next-line import/no-unresolved
 import Login from '@/components/pages/Login.vue';
 // eslint-disable-next-line import/no-unresolved
 import Dashboard from '@/components/Dashboard.vue';
 // eslint-disable-next-line import/no-unresolved
 import Products from '@/components/pages/Products.vue';
+
+import Home from '../views/Home.vue';
 
 Vue.use(VueRouter);
 

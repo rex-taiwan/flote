@@ -39,6 +39,7 @@
     "pretty-quick": "^2.0.2",
     "sass": "^1.30.0",
     "sass-loader": "^8.0.2",
+    "thread-loader": "^3.0.1",
     "vue-cli-plugin-vuetify": "^2.0.8",
     "vue-template-compiler": "^2.6.12",
     "vuetify-loader": "^1.6.0"
