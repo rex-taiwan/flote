@@ -196,7 +196,6 @@ export default {
       const vm = this;
       //   因為要把products存到變數裡 所以必須使用const vm=this 確保可以儲存在products裡面
       this.$http.get(api).then(response => {
-        console.log(response.data);
         vm.products = response.data.products;
       });
     },
@@ -211,14 +210,12 @@ export default {
       //   因為是一個物件 然後包著data 所以需要欄位外面需用data包起
       //   新增行為使用post 修改使用put
       this.$http.post(api, { data: vm.tempProduct }).then(response => {
-        console.log(response.data);
         if (response.data.success) {
           this.dialog = false;
           vm.getProducts();
         } else {
           this.dialog = false;
           vm.getProducts();
-          console.log('新增失敗');
         }
         // vm.products = response.data.products
       });

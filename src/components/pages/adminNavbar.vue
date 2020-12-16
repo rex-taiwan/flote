@@ -97,7 +97,6 @@ export default {
       // 將用戶資料傳進
       // vm.user=帳戶跟密碼
       this.$http.post(api).then(response => {
-        console.log(response.data);
         if (response.data.success) {
           // router 寫法 將會傳到首頁
           vm.$router.push('/login');
